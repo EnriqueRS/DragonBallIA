@@ -23,7 +23,7 @@ fase termina con un experimento medible, no con un "ya funciona".
 ## 📜 Historia: el proyecto anterior y por qué murió
 
 Este repo ya fue un intento de lo mismo (código preservado en el commit
-`7ce4a40` de git). Fracasó silenciosamente y la autopsia enseña más que el
+`950f2c0` de git). Fracasó silenciosamente y la autopsia enseña más que el
 código:
 
 | Qué hacía | Por qué falló | Lección |
@@ -43,7 +43,7 @@ Síntoma final (`response.txt`, hoy en git): tres preguntas seguidas →
 
 ```
                           ┌─────────────────────────────┐
-                          │   NUC (192.168.100.73)      │
+                          │   NUC (Postgres en LAN)     │
                           │                             │
  PREGUNTA ──► embedding ──┼──► Postgres 17 + pgvector   │
               (NAN API)   │    tabla chunks             │
@@ -62,7 +62,7 @@ Síntoma final (`response.txt`, hoy en git): tres preguntas seguidas →
 |---|---|---|
 | Embeddings | `qwen3-embedding` @ api.nan.builders, **1024 dims** | Multilingüe fuerte; `dimensions` = truncado matryoshka |
 | Rerank (Fase 6) | `rerank` (Qwen3-Reranker-8B) @ NAN | Segunda pasada de precisión, ya verificado con español |
-| LLM | `nan/glm5.3-flash` @ litellm.custombots.es | Proxy LiteLLM self-hosted del nuc |
+| LLM | `nan/glm5.3-flash` vía proxy LiteLLM propio | Self-hosted en el homelab |
 | Vector store | **Postgres + pgvector 0.8.0** en el nuc | Infra propia, SQL puro para aprender; BD `dragonball` dedicada con usuario propio |
 | Idioma de todo | Español | El dataset lo es; models de embeddings tienen que lidiarlo |
 
