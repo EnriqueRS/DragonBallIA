@@ -81,6 +81,8 @@ construimos la pieza nosotros sobre pgvector — más didáctico y más estable.
 | `smoke_test.py` | 0 | El circuito completo en miniatura: 3 fichas → pgvector → búsqueda → LLM |
 | `embeddings.py` | 1 | Cliente de embeddings (individual + por lotes) y `similitud_coseno()` a mano |
 | `explora_embeddings.py` | 1 | Seis experimentos guiados sobre embeddings (ver 🎓 Fase 1) |
+| `chunking.py` | 2 | Las 3 estrategias de troceado a mano + limpieza wiki + ficha infobox |
+| `explora_chunking.py` | 2 | Comparativa de estrategias: estadísticas, dilución y mini-evaluación (🎓 Fase 2) |
 | `dataset_dragonball/raw_texts/` | — | 1.571 ficheros `.txt` de personajes de la wiki |
 | `dataset_dragonball/dragonball_finetuning.jsonl` | — | 6.893 pares instrucción/respuesta (para la Fase 6 opcional) |
 
@@ -90,7 +92,7 @@ construimos la pieza nosotros sobre pgvector — más didáctico y más estable.
 
 - [x] **Fase 0 — Infraestructura**: BD pgvector + config central + smoke test verde
 - [x] **Fase 1 — Embeddings a mano**: coseno a mano, mapa semántico, matryoshka, comparativa de modelos
-- [ ] **Fase 2 — Chunking a mano**: estrategias (fijo / por secciones wiki) y sus efectos
+- [x] **Fase 2 — Chunking a mano**: 3 estrategias comparadas + validación anti-corrupción del API
 - [ ] **Fase 3 — Búsqueda a mano**: indexar ~200 personajes, ranking con numpy vs SQL, **golden set + recall@5**
 - [ ] **Fase 4 — RAG completo**: prompt con citas, iteración sobre fallos, playground
 - [ ] **Fase 5 — Framework**: rehacer la pipeline con LangChain y comparar
@@ -239,6 +241,103 @@ alguna vez cambias de modelo de embeddings, reindexa TODO.*
 4. Cada modelo es un universo: no mezclar espacios, no comparar números entre modelos.
 5. El modelo "sabe" del mundo (Kakarotto=Goku) pero solo lo que vio al entrenar.
 6. Matryoshka: las primeras dims concentran lo esencial; truncar = trade-off tamaño/resolución.
+
+---
+
+## Fase 2 — Chunking
+
+### ¿Por qué partir el texto?
+
+Un embedding representa UN significado en UN vector. Si metes una página
+entera (70.000 caracteres en la de Goku) en un solo vector, ese vector no
+representa ni la infancia de Goku ni su personalidad: representa
+«mezcla de todo, dominado por lo primero que aparece». El chunking decide
+qué unidades de significado se indexan y, con ello, qué puede recuperar tu
+buscador. **Es la mitad del éxito de un RAG.**
+
+### Las tres estrategias (implementadas a mano en `chunking.py`)
+
+1. **Página entera truncada a 2.500** — la recreación fiel del bug que mató
+   al proyecto viejo: 1 chunk por personaje, sin limpieza profunda.
+2. **Fijo 1000/200** — ventanas de ~1.000 caracteres con solapamiento de
+   200 (lo que hacía `RecursiveCharacterTextSplitter` de LangChain): parte
+   bien los tamaños pero es ciega a la estructura.
+3. **Secciones wiki** — consciente de la estructura: la ficha infobox se
+   parsea a campos limpios (`familia: Bardock (Padre); Gine (Madre)…`), la
+   intro y cada `== Sección ==` se trocean a ~1.200 caracteres con
+   solapamiento por párrafos, y se descartan secciones de navegación
+   (Galería, Referencias, Navegación). Todo con **inyección de sujeto**:
+   cada chunk lleva el prefijo `Son Goku (Historia > Infancia): …` — un
+   chunk suelto no sabe de quién habla.
+
+### Resultados (8 personajes: Goku, Vegeta IV, Monaka, Paragus, Gine, Whis, Beerus, Freeza)
+
+| Estrategia | nº chunks | media chars | % cortados a mitad de frase |
+|---|---|---|---|
+| 1. página entera | 8 | 2.500 (truncados) | 100% |
+| 2. fijo 1000/200 | 226 | 832 | 48% |
+| 3. secciones | 230 | 811 | 38% |
+
+**La dilución (C3)** — media de similitud coseno entre chunks de personajes
+DISTINTOS (cuanto más alta, más "igual entre sí" es todo el corpus):
+
+| Estrategia | media | desviación |
+|---|---|---|
+| 1. página entera | **0.573** | **0.073** ← suelo más alto, menos contraste |
+| 2. fijo | 0.484 | 0.094 |
+| 3. secciones | **0.466** | 0.109 ← más espacio semántico, más señal |
+
+**Mini-evaluación (C4)** — hit@3 con golden set de 8 preguntas:
+8/8 con estrategia 1, 7/8 con las otras dos. Lectura honesta: con solo
+8 candidatos, la estrategia 1 acierta «por eliminatoria» (3 plazas para 8
+personajes) aunque su vector sea malo — **hit@3 con n=8 es una métrica
+débil**. El veredicto real está en la dilución: con las 1.571 páginas del
+dataset, los vectores-platillo de la estrategia 1 se amontonan en la misma
+zona del espacio y el top-k se llena de personajes equivocados — el
+mecanismo detrás de los scores planos (0.8550, 0.8538, 0.8560…) del
+`response.txt` del proyecto viejo. La Fase 3 (200 personajes) hará visible
+el efecto con n grande.
+
+**Lección de evaluación**: la query *«¿quién destruyó el planeta Vegeta?»*
+falla porque las páginas de Vegeta IV mencionan sin parar el planeta que da
+nombre a su raza. El hit@personaje es una métrica burda — el chunk ganador
+puede contener la respuesta sin ser del personaje esperado (y al revés).
+Afinar el golden set es parte del trabajo; evaluar por RESPUESTA llega en
+la Fase 4.
+
+### ⚠️ El bug del API: corrupción silenciosa por lotes
+
+Durante esta fase, `qwen3-embedding` vía NAN **falló de forma intermitente
+con lotes**: devolvía n vectores por n textos — pero con índices repetidos
+(`[0,1,2,3,3,4,5,6]`) y vectores duplicados (solo k únicos calculados),
+**sin ningún código de error**. La primera vez se manifestó como un
+misterioso «¿personalidad de Vegeta?» → Monaka: una query había recibido el
+vector de otra. Validar a mano los embeddings de las queries reveló el
+patrón (matriz de similitudes con filas idénticas).
+
+La defensa, en `embeddings.py`:
+
+```python
+def _contrato_roto(data, n):        # valida CADA respuesta:
+    # 1. nº vectores == nº textos
+    # 2. índices == 0..n-1 sin repetir
+    # 3. ningún par de vectores idénticos (dot > 0.9999)
+```
+
+Lote inválido → reintento (hasta 3) → degradación a llamadas individuales.
+En la última ejecución cazó en vivo un lote corrupto y lo repitió con
+éxito. Sin esa validación, chunks con el embedding de OTRO texto habrían
+entrado en la base vectorial: **el fallo más peligroso no es el que lanza
+error, es el que responde mal sin avisar**.
+
+### Reglas de oro (Fase 2)
+
+1. El chunking decide qué puede recuperar tu buscador: 1 chunk = 1 idea.
+2. Inyecta el sujeto en cada chunk (nombre + sección): el chunk viaja solo.
+3. La ficha infobox es oro estructurado: parsearla, no indexarla como prosa.
+4. Limpia el marcado wiki antes de embeber; descarta secciones de navegación.
+5. El solapamiento preserva contexto en el corte, no es gratis (duplica contenido).
+6. Valida los contratos de tus dependencias externas, aunque "funcionen".
 
 ---
 
