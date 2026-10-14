@@ -1,0 +1,193 @@
+python rag_dragonball.py "quien es Son Goku?"
+User Query: quien es Son Goku?
+
+Searching vector database...
+--- Chunk 1 [Score: 0.8660] de Unknown ---
+--- Chunk 2 [Score: 0.8602] de Unknown ---
+--- Chunk 3 [Score: 0.8560] de Unknown ---
+--- Chunk 4 [Score: 0.8545] de Unknown ---
+--- Chunk 5 [Score: 0.8538] de Unknown ---
+Retrieved 5 context fragments:
+
+--- Chunk 1 ---
+dos en sus muñecas.
+=== Personalidad ===
+Para ser un Dios de la Destrucción, es de carácter débil, indeciso e irresponsable, no siendo capaz de destruir cosas, por su personalidad. Debido a esta actitud, Rou notó que quizás Freezer pueda ser más apto para ocupar el cargo de Dios de la Destrucción que él. A pesar de esto, se le mostró destruyendo una ciudad horas antes del Torneo de la Fuerza.
+A diferencia de otros dioses, él no se enoja de manera corriente con los participantes de su equipo al perder por razones triviales (a excepción de Roselle). A su vez, se le vio con una cara de preocupación ante la inminente destrucción de su universo, pero manteniendo cordura, a diferencia de Rou o el Equipo del Universo 9 que gritaron en agonía antes y durante su destrucción.
+En el manga, se muestra un Sidra más enfocado en su cargo como Dios de la Destrucción, donde destruyó un planeta debido a que sus habitantes no podrían reconstruirlo y su existencia era innecesaria. No obstante se ve que esa decisión no le gustaba, pero debía hacerlo ya que ese era su trabajo, volviendo a revisar sus cálculos para cerciorarse de no haberse equivocado.
+== Historia ==
+=== Arco de la Supervivencia del Univ
+
+--- Chunk 2 ---
+o antes de que Shin fuera Kaio-shin, participó en un juego del escondite confeccionado por el Rey de Todo, pero este tuvo que ser cancelado ya que Beerus jamás salió, lo que causó que el rey se molestara y tuviera que ser calmado.
+=== Arco de la Supervivencia del Universo ===
+==== Anime ====
+Este aparece por primera vez en los combates de exhibición entre los universos 7 y 9 junto con Toppo su ángel, Marcarita y el Kaio-shin Kai.
+Después reaparece en el Torneo de la Fuerza es testigo de la eliminación del Universo 9 y se le nota la preocupación tras ver a algunas de sus Tropas del Orgullo caer en el torneo.
+Luego de que su equipo se redujera a Jiren, Toppo y Dispo, sostiene que la calidad es mejor que la cantidad y confía ciegamente que el Equipo Universo 11 se alzará con la victoria. Luego de que Dispo y Toppo fueran sacados de la arena se lo ve preocupado. Cuando ve a Jiren, su guerrero restante, ser superado por Son Goku, se lo nota desesperado y cuando se da vuelta la tortilla a favor de su universo, se pone feliz.
+Cuando Goku pierde la Doctrina egoísta, ordena efusivamente a Jiren que lo saque de la arena preguntándole si no le importaba perder. 
+Luego de que Jiren se viera ag
+
+--- Chunk 3 ---
+ respetuosamente de Gowas y Zamas.
+=== Arco de Daima ===
+Finalmente Kibitoshin cesaría de existir, cuando la fusión le pide a Boo Bueno que los absorba en su interior para deshacer la fusión gracias a las propiedades que tiene su cuerpo, de manera similar a lo sucedido con Vegetto en su enfrentamiento contra Boo Malvado. Así, Kibito vuelve a ser el asistente de Shin, pero ambos sufrirían una transformación, ya que Son Goku y todos quienes ayudaron a vencer a Boo Puro, serían convertidos en niños por el deseo que le pide Gomah a Shen Long y eso incluía a ambos glindianos. Más adelante, Shin viajaría junto con Goku y Glorio al Reino Demoníaco, mientras que Kibito se quedaría montando guardia en el Templo Sagrado de Dios junto con el ahora también pequeño Mr. Popo una vez que reparan la otra nave que pilotearía Bulma junto con Vegeta y Piccolo.
+== Poder ==
+* El nivel de Kibito como asistente de Kaio-shin es alto, según el Daizenshuu 7: "su nivel de potencia es considerablemente más alto, lo suficiente como para dar a Gohan una pelea difícil, siempre y cuando él no sea un Supersaiyano". Eso significa que, si Gohan (Gran Saiyaman) hubiese cumplido la regla original de no transformarse y
+
+--- Chunk 4 ---
+venenosas.
+=== El camino hacia el más fuerte ===
+Durante la película, se hace referencia al Ave Fénix de forma similar al Arco de la Búsqueda de las Esferas del Dragón.
+== Curiosidades ==
+* Existen diversas versiones que podrían explicar la razón por la cual Kame-Sen'nin ha podido vivir por más de 300 años siendo solo un terrícola común, entre ellas se encuentran las siguientes afirmaciones: La primera es la del Ave Fénix mencionado anteriormente. La segunda versión dice que Kame-Sen'nin bebió el agua de la inmortalidad o medicina de la inmortalidad, cosa que se confirmó como falsa en el Arco del Rey Demonio Piccolo, en la que él menciona que mintió sobre haber hecho eso y que todo era una farsa. La tercera explicación y la más actual en el anime de Dragon Ball Super es que presuntamente Kame-Sen'nin consume la Hierba del Paraíso para vivir muchos años más.
+== Navegación ==
+* Agua de la inmortalidad
+* Hierba del Paraíso
+
+--- Chunk 5 ---
+n sigue enojada con Trunks, quien confundido, pregunta sobre qué lugar es en el que está. Ella le responde, diciendo que ese es el Nido del Tiempo, el lugar en el cual se controla el flujo del tiempo y que ella es la Kaio-shin del Tiempo y su ave Tokitoki. Menciona que lo llamó debido a que descubrió que viajó en una Máquina del tiempo, lo cual supone un error que puede destruir todo. Trunks se encuentra en shock y se perdona ante la Kaio-shin ya que él no lo sabía.
+La Kaio-shin encuentra un lugar en la historia que no creó Trunks, por lo que decide ir a investigar junto a él, quien se le ofrece para ir. La Kaio-shin del Tiempo comprende que Trunks no tiene malas intenciones, pero que no puede dejar pasado en alto algo como eso y procede a darle nuevas ropas, posteriormente le dice que junto con su supervisión, podrá interferir con el flujo del tiempo. La Kaio-shin del Tiempo dice que podrían llamarse la "Patrulla del Tiempo" y le pregunta a Trunks si suena bien, pero él no está interesado en eso y le sugiere darse prisa.
+=== El Hombre Pálido (Online) ===
+El Trunks Patrullero del Tiempo fue advertido por Dendé del Futuro de que Mira estaba causando caos a lo largo del tiempo y el e
+
+Generating answer...
+
+============== RESPONSE ==============
+ I do not have enough information.
+=======================================
+
+python rag_dragonball.py "Tiene hijos Gine?"
+User Query: Tiene hijos Gine?
+
+Searching vector database...
+--- Chunk 1 [Score: 0.8300] de Unknown ---
+--- Chunk 2 [Score: 0.8227] de Unknown ---
+--- Chunk 3 [Score: 0.8212] de Unknown ---
+--- Chunk 4 [Score: 0.8207] de Unknown ---
+--- Chunk 5 [Score: 0.8203] de Unknown ---
+Retrieved 5 context fragments:
+
+--- Chunk 1 ---
+forma violenta, descontrolada y salvaje de su hijo.
+== Historia ==
+=== Pasado ===
+Paragus era uno de los soldados de alto rango del Ejército Saiyano al servicio del Rey Vegeta hasta que un día tuvo un hijo, Broly, que tenía un nivel de poder aún mayor que el del príncipe Vegeta, el hijo del rey. No obstante, el Rey Vegeta celoso de que Broly tuviera más potencial que su hijo, decidió exiliar al hijo de Paragus con una cápsula espacial rumbo a otro planeta. Paragus, informado tarde del exilio de su hijo, se pone furioso y le pide explicaciones al soberano. Este le explica que el enorme potencial de Broly podría poner en peligro el futuro del pueblo saiyano, sin embargo, Paragus no está convencido y entiende que él lo desterró por envidia. Al negarse a dejar a su hijo solo y morir en un planeta sin comida y a priori deshabitado, Paragus le da la espalda al Rey Vegeta, renunciando a toda relación con la familia real, jurando vengarse y decide irse a rescatar a su hijo, que despega del planeta al mismo tiempo. Para ello, roba una nave espacial y le ruega a su compañero, Beets, que lo acompañe a buscar a Broly quien es enviado al Planeta Vampa.
+Sin embargo, al llegar estrellan su nave y
+
+--- Chunk 2 ---
+que después de reflexionar sobre lo que hizo, se disculpó con los habitantes del pueblo y los estudiantes de Ten Shinhan por eso.
+== Biografía ==
+=== Orígenes ===
+Yulín entrenó con Ten Shinhan y Chaoz en la Escuela de la Grulla, antes de que los dos salieran de la escuela después de que Ten Shinhan se hubiera peleado con Tsuru-Sennin, pero este la ignoraba.
+Después de dejar la Escuela de la Grulla, Yulín empezó a planear su venganza y con ello aprender el arte de la hechicería.
+=== Arco de la Supervivencia del Universo ===
+Ella se encuentra fuera del dojo de Ten Shinhan en medio de uno de los entrenamientos, al entrar, se presenta como Yulín al entrar al lugar. Aunque ella afirma que no tiene ninguna experiencia previa de artes marciales, quiere comenzar a entrenar porque ella oye que es bueno para su apariencia física. Ten Shinhan le dice entrene en otro lugar, ya que su dojo es solo para artistas marciales que se tomen las cosas en serio. No obstante, Kame-Sen'nin no se molesta en presentarse y darle lecciones, llevándola a su habitación, pero esa no es la prioridad de Yulín.
+En su habitación, Yulín se viste con un "uniforme de artes marciales" que le dio Kame-Sen'nin por razones
+
+--- Chunk 3 ---
+nombre-ja = 魔導師
+ nombre-ja_latino = Madō-shi
+Los son un grupo de hechiceros y magos que se caracteriza por estar conformado por integrantes con grandes poderes mágicos.
+En ocasiones, también se les ha conocido como maduchis en español como forma castellanizada del vocablo original en japonés.
+== Descripción ==
+Los individuos que pertenecen a esta tribu son seres pequeños, similares a los duendes. Tienen unos grandes ojos y largos bigotes. Hay pocos taumaturgos en el universo, de estos, Bibbidi es uno de los más fuertes gracias a sus grandes capacidades con la magia en su rama taumatúrgica.
+Se sabe que los seres taumatúrgicos, tales como Bibbidi y Bobbidi, suelen utilizar el Reino Demoníaco Oscuro como escondite.
+== Miembros ==
+* Bibbidi: Único taumaturgo visto.
+** Clones de Bibbidi: Bibbidi tenía la capacidad de dividirse en múltiples copias de él.
+*** Bobbidi: El clon principal de Bibbidi, considerado como la última encarnación e hijo de dicho prodigio de la taumaturgia.
+== Galería ==
+== Referencias ==
+
+--- Chunk 4 ---
+===
+El nombre con el que se da a conocer, Shin, es una alusión a su rango de Kaioshin y proviene directamente de shin. Su nombre original glindiano, Nahare, proviene de la variante del verbo imperativo utilizada mayormente en el dialecto de Osaka, continuando así el juego de palabras relacionadas con verbos japoneses, como Arins, Deges, Gowas o Zamas.
+=== Apariencia ===
+Es un ser de baja estatura, de piel lila-violeta (de tez rosada en el manga a color) con una cresta blanca y vestido con un traje elegante de Kaio-shin. Porta un par de Pendientes Pothala de color amarillo (verde en el manga).
+=== Personalidad ===
+La actitud de Shin cambia a medida que el Arco del Monstruo Boo avanza. Cuando se introdujo por primera vez, que entrecierra los ojos en Goku y sonríe de una manera que le hace parecer misterioso y poderoso. Al igual que lo que debería ser un líder supremo del universo, se mantiene en calma, es analítico y piensa racionalmente en los momentos críticos. Más tarde, su constante sorpresa ante el poder de los saiyanos y su dependencia de otros para proteger el universo contra el Monstruo Boo lo hacen parecer más temible e inocente. Esto probablemente se deba a su incapacidad p
+
+--- Chunk 5 ---
+nombre-ja_latino = Dai Shinkan
+ otros nombres = Gran Sacerdote Gran Consejero Supremo Sacerdote
+ imagen = Gran Sacerdote DBS.png
+ sexo = 
+ edad = 
+ transformaciones = 
+ raza = Ángel guía
+ ocupación = Asistente del Rey de Todo
+ procedencia = Cielo
+ residencia = Palacete del Rey de Todo
+ afiliados = Rey de Todo
+ familia = Awamo (hijo)Sour (hijo)Camparri (hijo)Conic (hijo)Cucatail (hija)Vados (hija)Whis (hijo)Korn (hijo)Mojito (hijo)Kus (hija mayor)Marcarita (hija)Martinu (hija)Merus (hijo)
+ saga = 
+ Primera aparición = Anime: Episodio 55 (Dragon Ball Super)Manga: Capítulo 17 (Dragon Ball Super)
+El Dai Shinkan es un personaje introducido en Dragon Ball Super; es un ángel guía que recibe a las visitas en el palacete del Rey de Todo y guía a los invitados hasta él. Es el padre de los ángeles guía de todos los universos, siendo que Kus es su hija mayor.
+Es un ser muy respetable y temible, puesto que cuando fue al Planeta Sagrado a avisar el comienzo del torneo del Rey de Todo, inmediatamente todos los Kaio-shin entraron en pánico y se postraron en su presencia, incluso Beerus, siendo un Dios de la Destrucción muy orgulloso y poderoso se arrodilló temerosamente ante él.
+== Vista general =
+
+Generating answer...
+
+============== RESPONSE ==============
+ No tengo suficiente información.
+=======================================
+
+python rag_dragonball.py "quien es Monaka?"
+User Query: quien es Monaka?
+
+Searching vector database...
+--- Chunk 1 [Score: 0.8678] de Unknown ---
+--- Chunk 2 [Score: 0.8627] de Unknown ---
+--- Chunk 3 [Score: 0.8587] de Unknown ---
+--- Chunk 4 [Score: 0.8576] de Unknown ---
+--- Chunk 5 [Score: 0.8553] de Unknown ---
+Retrieved 5 context fragments:
+
+--- Chunk 1 ---
+dos en sus muñecas.
+=== Personalidad ===
+Para ser un Dios de la Destrucción, es de carácter débil, indeciso e irresponsable, no siendo capaz de destruir cosas, por su personalidad. Debido a esta actitud, Rou notó que quizás Freezer pueda ser más apto para ocupar el cargo de Dios de la Destrucción que él. A pesar de esto, se le mostró destruyendo una ciudad horas antes del Torneo de la Fuerza.
+A diferencia de otros dioses, él no se enoja de manera corriente con los participantes de su equipo al perder por razones triviales (a excepción de Roselle). A su vez, se le vio con una cara de preocupación ante la inminente destrucción de su universo, pero manteniendo cordura, a diferencia de Rou o el Equipo del Universo 9 que gritaron en agonía antes y durante su destrucción.
+En el manga, se muestra un Sidra más enfocado en su cargo como Dios de la Destrucción, donde destruyó un planeta debido a que sus habitantes no podrían reconstruirlo y su existencia era innecesaria. No obstante se ve que esa decisión no le gustaba, pero debía hacerlo ya que ese era su trabajo, volviendo a revisar sus cálculos para cerciorarse de no haberse equivocado.
+== Historia ==
+=== Arco de la Supervivencia del Univ
+
+--- Chunk 2 ---
+o antes de que Shin fuera Kaio-shin, participó en un juego del escondite confeccionado por el Rey de Todo, pero este tuvo que ser cancelado ya que Beerus jamás salió, lo que causó que el rey se molestara y tuviera que ser calmado.
+=== Arco de la Supervivencia del Universo ===
+==== Anime ====
+Este aparece por primera vez en los combates de exhibición entre los universos 7 y 9 junto con Toppo su ángel, Marcarita y el Kaio-shin Kai.
+Después reaparece en el Torneo de la Fuerza es testigo de la eliminación del Universo 9 y se le nota la preocupación tras ver a algunas de sus Tropas del Orgullo caer en el torneo.
+Luego de que su equipo se redujera a Jiren, Toppo y Dispo, sostiene que la calidad es mejor que la cantidad y confía ciegamente que el Equipo Universo 11 se alzará con la victoria. Luego de que Dispo y Toppo fueran sacados de la arena se lo ve preocupado. Cuando ve a Jiren, su guerrero restante, ser superado por Son Goku, se lo nota desesperado y cuando se da vuelta la tortilla a favor de su universo, se pone feliz.
+Cuando Goku pierde la Doctrina egoísta, ordena efusivamente a Jiren que lo saque de la arena preguntándole si no le importaba perder. 
+Luego de que Jiren se viera ag
+
+--- Chunk 3 ---
+n sigue enojada con Trunks, quien confundido, pregunta sobre qué lugar es en el que está. Ella le responde, diciendo que ese es el Nido del Tiempo, el lugar en el cual se controla el flujo del tiempo y que ella es la Kaio-shin del Tiempo y su ave Tokitoki. Menciona que lo llamó debido a que descubrió que viajó en una Máquina del tiempo, lo cual supone un error que puede destruir todo. Trunks se encuentra en shock y se perdona ante la Kaio-shin ya que él no lo sabía.
+La Kaio-shin encuentra un lugar en la historia que no creó Trunks, por lo que decide ir a investigar junto a él, quien se le ofrece para ir. La Kaio-shin del Tiempo comprende que Trunks no tiene malas intenciones, pero que no puede dejar pasado en alto algo como eso y procede a darle nuevas ropas, posteriormente le dice que junto con su supervisión, podrá interferir con el flujo del tiempo. La Kaio-shin del Tiempo dice que podrían llamarse la "Patrulla del Tiempo" y le pregunta a Trunks si suena bien, pero él no está interesado en eso y le sugiere darse prisa.
+=== El Hombre Pálido (Online) ===
+El Trunks Patrullero del Tiempo fue advertido por Dendé del Futuro de que Mira estaba causando caos a lo largo del tiempo y el e
+
+--- Chunk 4 ---
+ respetuosamente de Gowas y Zamas.
+=== Arco de Daima ===
+Finalmente Kibitoshin cesaría de existir, cuando la fusión le pide a Boo Bueno que los absorba en su interior para deshacer la fusión gracias a las propiedades que tiene su cuerpo, de manera similar a lo sucedido con Vegetto en su enfrentamiento contra Boo Malvado. Así, Kibito vuelve a ser el asistente de Shin, pero ambos sufrirían una transformación, ya que Son Goku y todos quienes ayudaron a vencer a Boo Puro, serían convertidos en niños por el deseo que le pide Gomah a Shen Long y eso incluía a ambos glindianos. Más adelante, Shin viajaría junto con Goku y Glorio al Reino Demoníaco, mientras que Kibito se quedaría montando guardia en el Templo Sagrado de Dios junto con el ahora también pequeño Mr. Popo una vez que reparan la otra nave que pilotearía Bulma junto con Vegeta y Piccolo.
+== Poder ==
+* El nivel de Kibito como asistente de Kaio-shin es alto, según el Daizenshuu 7: "su nivel de potencia es considerablemente más alto, lo suficiente como para dar a Gohan una pelea difícil, siempre y cuando él no sea un Supersaiyano". Eso significa que, si Gohan (Gran Saiyaman) hubiese cumplido la regla original de no transformarse y
+
+--- Chunk 5 ---
+venenosas.
+=== El camino hacia el más fuerte ===
+Durante la película, se hace referencia al Ave Fénix de forma similar al Arco de la Búsqueda de las Esferas del Dragón.
+== Curiosidades ==
+* Existen diversas versiones que podrían explicar la razón por la cual Kame-Sen'nin ha podido vivir por más de 300 años siendo solo un terrícola común, entre ellas se encuentran las siguientes afirmaciones: La primera es la del Ave Fénix mencionado anteriormente. La segunda versión dice que Kame-Sen'nin bebió el agua de la inmortalidad o medicina de la inmortalidad, cosa que se confirmó como falsa en el Arco del Rey Demonio Piccolo, en la que él menciona que mintió sobre haber hecho eso y que todo era una farsa. La tercera explicación y la más actual en el anime de Dragon Ball Super es que presuntamente Kame-Sen'nin consume la Hierba del Paraíso para vivir muchos años más.
+== Navegación ==
+* Agua de la inmortalidad
+* Hierba del Paraíso
+
+Generating answer...
+
+============== RESPONSE ==============
+ I do not have enough information.
+=======================================

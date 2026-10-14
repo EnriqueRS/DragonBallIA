@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "opencode-plugin-litellm": "^0.3.1"
+  }
+}

@@ -1,0 +1,7 @@
+.env
+node_modules/
+__pycache__/
+*.pyc
+
+# DB antigua de Chroma (generada, se regenera con los scripts)
+dragonball_db/
